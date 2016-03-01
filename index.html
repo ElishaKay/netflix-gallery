@@ -16,7 +16,11 @@
       <i class="fa fa-chevron-circle-left"></i>
     </div>
     <div class="items">
-      <div class="item" ng-repeat="item in gallery track by $index">{{item.id}}</div>
+      <div class="item" ng-repeat="item in gallery track by $index">
+        <div class="div1">{{item.id}}</div>
+        <div class="div2">[share][open]</div>
+        <div class="div3" id="model-{{item.id}}">[***]</div>
+      </div>
     </div>
   </div>
 </div>
